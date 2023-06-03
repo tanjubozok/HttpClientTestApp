@@ -1,1 +1,1 @@
-﻿
+﻿global using HttpClientTest.Entities.Abstract;

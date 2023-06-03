@@ -1,6 +1,12 @@
-﻿namespace HttpClientTest.Entities.Models
+﻿namespace HttpClientTest.Entities.Models;
+
+public class AppUserRole : IBaseEntity
 {
-    internal class AppUserRole
-    {
-    }
+    public int Id { get; set; }
+
+    public int AppUserId { get; set; }
+    public AppUser? AppUser { get; set; }
+
+    public int AppRoleId { get; set; }
+    public AppRole? AppRole { get; set; }
 }

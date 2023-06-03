@@ -1,6 +1,9 @@
-﻿namespace HttpClientTest.Entities.Models
+﻿namespace HttpClientTest.Entities.Models;
+
+public class Category : IBaseEntity
 {
-    internal class Category
-    {
-    }
+    public int Id { get; set; }
+    public string Name { get; set; } = string.Empty;
+
+    public List<BlogCategory>? BlogCategories { get; set; }
 }

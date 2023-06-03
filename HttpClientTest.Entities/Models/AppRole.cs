@@ -1,5 +1,7 @@
 ﻿namespace HttpClientTest.Entities.Models;
 
-internal class AppRole
+public class AppRole : IBaseEntity
 {
+    public int Id { get; set; }
+    public string Name { get; set; } = string.Empty;
 }
