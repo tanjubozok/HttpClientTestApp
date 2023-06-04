@@ -11,5 +11,8 @@ public class Comment : IBaseEntity
     public int? ParentCommentId { get; set; }
     public Comment? ParentComment { get; set; }
 
+    public int BlogId { get; set; }
+    public Blog? Blog { get; set; }
+
     public List<Comment>? SubComment { get; set; }
 }

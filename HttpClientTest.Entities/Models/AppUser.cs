@@ -10,4 +10,6 @@ public class AppUser : IBaseEntity
     public string Surname { get; set; } = string.Empty;
 
     public List<Blog>? Blogs { get; set; }
+
+    public List<AppUserRole>? AppUserRoles { get; set; }
 }

@@ -13,4 +13,5 @@ public class Blog : IBaseEntity
     public AppUser? AppUser { get; set; }
 
     public List<BlogCategory>? BlogCategories { get; set; }
+    public List<Comment>? Comments { get; set; }
 }
