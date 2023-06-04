@@ -6,4 +6,16 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <EditorConfigFiles Remove="C:\dev_projects\HttpClientTestApp\HttpClientTest.Common\.editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="C:\dev_projects\HttpClientTestApp\HttpClientTest.Common\.editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HttpClientTest.Entities\HttpClientTest.Entities.csproj" />
+  </ItemGroup>
+
 </Project>
