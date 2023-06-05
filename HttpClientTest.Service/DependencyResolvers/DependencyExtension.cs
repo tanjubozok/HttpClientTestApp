@@ -17,14 +17,14 @@ public static class DependencyExtension
 
         #region Validators
 
-        services.AddTransient<IValidator<CategoryAddDto>, CategoryAddDtoValidator>();
-        services.AddTransient<IValidator<CategoryUpdateDto>, CategoryUpdateDtoValidator>();
+        //services.AddTransient<IValidator<CategoryAddDto>, CategoryAddDtoValidator>();
+        //services.AddTransient<IValidator<CategoryUpdateDto>, CategoryUpdateDtoValidator>();
 
-        services.AddTransient<IValidator<BlogAddDto>, BlogAddDtoValidator>();
-        services.AddTransient<IValidator<BlogUpdateDto>, BlogUpdateDtoValidator>();
+        //services.AddTransient<IValidator<BlogAddDto>, BlogAddDtoValidator>();
+        //services.AddTransient<IValidator<BlogUpdateDto>, BlogUpdateDtoValidator>();
 
-        services.AddTransient<IValidator<AppUserLoginDto>, AppUserLoginDtoValidator>();
-        services.AddTransient<IValidator<AppUserRegisterDto>, AppUserRegisterDtoValidator>();
+        //services.AddTransient<IValidator<AppUserLoginDto>, AppUserLoginDtoValidator>();
+        //services.AddTransient<IValidator<AppUserRegisterDto>, AppUserRegisterDtoValidator>();
 
         #endregion
 
