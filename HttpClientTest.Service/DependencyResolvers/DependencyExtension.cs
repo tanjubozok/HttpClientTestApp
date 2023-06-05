@@ -38,6 +38,7 @@ public static class DependencyExtension
 
         // services
         services.AddScoped<ICategoryService, CategoryManager>();
+        services.AddScoped<IBlogService, BlogManager>();
 
         #endregion        
     }

@@ -6,3 +6,4 @@ global using HttpClientTest.Service.DependencyResolvers;
 global using HttpClientTest.WebApi.CustomFilters;
 global using Microsoft.AspNetCore.Mvc;
 global using Microsoft.AspNetCore.Mvc.Filters;
+global using HttpClientTest.Dtos.BlogDtos;
