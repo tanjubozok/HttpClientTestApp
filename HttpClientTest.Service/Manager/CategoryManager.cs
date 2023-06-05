@@ -52,6 +52,17 @@ public class CategoryManager : ICategoryService
         return new Response<List<CategoryListDto>>(ResponseType.Success, dto);
     }
 
+    public async Task<IResponse<CategoryListDto>> GetByIdAsync(int categoryId)
+    {
+        var category = await _categoryRepository.GetByIdAsync(categoryId);
+        if (category is null)
+            return new Response<CategoryListDto>(ResponseType.NotFound, $"Kategori bulunamadı");
+
+        var dto = _mapper.Map<CategoryListDto>(category);
+
+        return new Response<CategoryListDto>(ResponseType.Success, dto);
+    }
+
     public async Task<IResponse> UpdateAsync(CategoryUpdateDto dto)
     {
         var updatedCategory = await _categoryRepository.GetByIdAsync(dto.Id);

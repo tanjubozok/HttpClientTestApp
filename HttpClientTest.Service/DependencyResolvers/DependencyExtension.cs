@@ -15,19 +15,6 @@ public static class DependencyExtension
 
         #endregion
 
-        #region DI
-
-        // repositories
-        services.AddScoped<IUnitOfWork, UnitOfWork>();
-        services.AddScoped<ICategoryRepository, CategoryRepository>();
-        services.AddScoped<IBlogRepository, BlogRepository>();
-        services.AddScoped<IAppUserRepository, AppUserRepository>();
-
-        // services
-        services.AddScoped<ICategoryService, CategoryManager>();
-
-        #endregion
-
         #region Validators
 
         services.AddTransient<IValidator<CategoryAddDto>, CategoryAddDtoValidator>();
@@ -40,5 +27,18 @@ public static class DependencyExtension
         services.AddTransient<IValidator<AppUserRegisterDto>, AppUserRegisterDtoValidator>();
 
         #endregion
+
+        #region DI
+
+        // repositories
+        services.AddScoped<IUnitOfWork, UnitOfWork>();
+        services.AddScoped<ICategoryRepository, CategoryRepository>();
+        services.AddScoped<IBlogRepository, BlogRepository>();
+        services.AddScoped<IAppUserRepository, AppUserRepository>();
+
+        // services
+        services.AddScoped<ICategoryService, CategoryManager>();
+
+        #endregion        
     }
 }
